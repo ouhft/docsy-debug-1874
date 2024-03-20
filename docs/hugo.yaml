@@ -2,3 +2,15 @@
 baseURL: https://github.io/ouhft/docsy-debug-1874
 contentDir: content/en
 publishDir: ../public
+
+
+
+# module.yaml
+module:
+  proxy: direct
+  hugoVersion:
+    extended: true
+    min: 0.124.0
+  imports:
+    - path: github.com/google/docsy
+      disable: false
