@@ -40,3 +40,17 @@ Error: error building site: render: failed to render pages: render of "taxonomy"
 ```
 
 ... fourth commit. Build failed
+
+1.  Edit `_index.md`, remove the `cascade` frontmatter.
+2.  Run `hugo --cleanDestinationDir --gc --templateMetrics --logLevel debug` and store output into `/build.txt`
+
+This one fails on a more basic issue: `ERROR [en] REF_NOT_FOUND: Ref "/getting-started/migration.md": "/Users/carl/Projects/github/ouhft/docsy-debug-1874/docsy-debug-1874-repo/docs/content/en/_index.md:16:77": page not found`
+
+... fifth commit. Build failed
+
+1.  Edit `_index.md` to remove obvious issues with missing links. Add `type: docs` to frontmatter
+2.  Run `hugo --cleanDestinationDir --gc --templateMetrics --logLevel debug` and store output into `/build.txt`
+
+Also, `hugo server` tested to see the output. With the exception that the `readfile` shortcode isn't producing output (but if the path is changed, will produce an error!), the rest looks about right.
+
+... sixth commit. Build successful

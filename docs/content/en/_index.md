@@ -7,15 +7,14 @@ linkTitle: Welcome
 menu:
   main:
     weight: 10
-cascade:
-  - type: docs
+type: docs
 ---
 
 > Placeholder. Content mostly from <https://www.markdownguide.org/>
 
 ## Adding docs to your project
 
-If you already have an existing build process, please check the [migration]({{< ref "/getting-started/migration.md" >}}) guide. If not, then you can add an (empty) documentation by the following steps:
+If you already have an existing build process, please check the migration guide. If not, then you can add an (empty) documentation by the following steps:
 
 1.  Create new site. From the project repository root:
 
