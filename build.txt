@@ -3,71 +3,57 @@ Start building sites …
 hugo v0.124.1-db083b05f16c945fec04f745f0ca8640560cf1ec+extended darwin/amd64 BuildDate=2024-03-20T11:40:10Z VendorInfo=brew
 
 INFO  static: removing all files from destination that don't exist in static dirs
-INFO  static: syncing static files to / duration 34.00703ms
-INFO  build:  step process substep collect files 1 files_total 1 duration 698.255µs
-INFO  build:  step process duration 735.517µs
-INFO  build:  step assemble duration 195.161µs
+INFO  static: syncing static files to / duration 32.948079ms
+INFO  build:  step process substep collect files 1 files_total 1 duration 696.983µs
+INFO  build:  step process duration 731.836µs
+INFO  build:  step assemble duration 221.506µs
 INFO  postcss: use config file "/Users/carl/.local/share/hugo/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.9.2-0.20240315194958-1929a65ccffb/postcss.config.js"
-INFO  build:  step render substep pages site en outputFormat html duration 1.905953449s
-INFO  deprecated: .Site.Author was deprecated in Hugo v0.124.0 and will be removed in a future release. Use taxonomies instead.
-INFO  build:  step render substep pages site en outputFormat rss duration 1.105125ms
-INFO  build:  step render pages 8 content 1 duration 1.908418284s
-INFO  build:  step postProcess duration 9.396µs
+ERROR render of "taxonomy" failed: "/Users/carl/.local/share/hugo/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.9.2-0.20240315194958-1929a65ccffb/layouts/docs/list.html:12:5": execute of template failed: template: docs/list.html:12:5: executing "main" at <partial "section-index.html" .>: error calling partial: "/Users/carl/.local/share/hugo/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.9.2-0.20240315194958-1929a65ccffb/layouts/partials/section-index.html:8:69": execute of template failed: template: partials/section-index.html:8:69: executing "partials/section-index.html" at <$parent.File.UniqueID>: error calling UniqueID: runtime error: invalid memory address or nil pointer dereference
+INFO  build:  step render pages 5 content 3 duration 1.895771128s
+INFO  build:  step postProcess duration 7.779µs
 
 Template Metrics:
 
      cumulative       average       maximum
        duration      duration      duration  count  template
      ----------      --------      --------  -----  --------
-   7.536480982s  1.884120245s  1.886824319s      4  partials/head.html
-   7.533894238s  1.883473559s  1.885664341s      4  partials/head-css.html
-    3.79629883s  1.898149415s  1.898735759s      2  _default/terms.html
-   1.903113683s  1.903113683s  1.903113683s      1  docs/list.html
-   1.901515351s  1.901515351s  1.901515351s      1  404.html
-    41.900861ms   10.475215ms    12.92816ms      4  partials/scripts.html
-     8.178091ms    2.044522ms    2.066522ms      4  partials/navbar.html
-     2.038152ms     509.538µs     878.055µs      4  partials/footer.html
-     1.999713ms    1.999713ms    1.999713ms      1  partials/toc.html
-     1.505115ms    1.505115ms    1.505115ms      1  shortcodes/readfile.html
-      896.173µs     896.173µs     896.173µs      1  partials/sidebar.html
-      763.628µs     190.907µs      363.51µs      4  partials/taxonomy_terms_cloud.html
-      756.256µs     252.085µs     279.622µs      3  _default/list.rss.xml
-      629.418µs     629.418µs     629.418µs      1  partials/sidebar-tree.html
-      570.159µs     142.539µs     408.427µs      4  partials/footer/center.html
-      567.109µs     113.421µs     140.784µs      5  partials/search-input.html
-      547.349µs     136.837µs     323.093µs      4  partials/footer/right.html
-      520.687µs      65.085µs     184.575µs      8  partials/_funcs/get-page-images.html
-      408.948µs     408.948µs     408.948µs      1  partials/page-meta-links.html
-      312.181µs     312.181µs     312.181µs      1  partials/taxonomy_terms_article_wrapper.html
-      305.369µs     305.369µs     305.369µs      1  _internal/_default/sitemap.xml
-      276.511µs      69.127µs     201.913µs      4  partials/footer/left.html
-      257.322µs       64.33µs     158.064µs      4  partials/outputformat.html
-      233.685µs     233.685µs     233.685µs      1  partials/taxonomy_terms_clouds.html
-      217.914µs     108.957µs     110.887µs      2  partials/hooks/body-end.html
-      198.567µs     198.567µs     198.567µs      1  partials/section-index.html
-      180.345µs      45.086µs     103.167µs      4  partials/footer/copyright.html
-       176.89µs      44.222µs      82.604µs      4  partials/hooks/head-end.html
-      151.217µs      75.608µs     128.434µs      2  partials/taxonomy_terms_article.html
-      135.087µs     135.087µs     135.087µs      1  partials/feedback.html
-       124.06µs      124.06µs      124.06µs      1  partials/breadcrumb.html
-      119.231µs      29.807µs     111.808µs      4  partials/favicons.html
-      109.936µs     109.936µs     109.936µs      1  partials/page-meta-lastmod.html
-        95.37µs       95.37µs       95.37µs      1  partials/version-banner.html
-        8.189µs       8.189µs       8.189µs      1  /js/search.js
-        5.526µs       5.526µs       5.526µs      1  /js/drawio.js
-        4.975µs       4.975µs       4.975µs      1  /js/plantuml.js
-        4.522µs       4.522µs       4.522µs      1  /js/markmap.js
+   7.486672562s   1.87166814s  1.874128209s      4  partials/head.html
+   7.484197482s   1.87104937s  1.873005359s      4  partials/head-css.html
+   5.644488151s   1.88149605s  1.891838169s      3  docs/list.html
+   1.890164655s  1.890164655s  1.890164655s      1  404.html
+    19.862454ms    9.931227ms    13.17835ms      2  partials/scripts.html
+      8.25321ms    2.063302ms    2.082945ms      4  partials/navbar.html
+     2.558887ms     639.721µs    2.089908ms      4  partials/toc.html
+     2.263224ms     565.806µs     587.379µs      4  partials/sidebar.html
+     2.170207ms     723.402µs    1.386632ms      3  partials/section-index.html
+     1.690255ms    1.690255ms    1.690255ms      1  shortcodes/readfile.html
+     1.598545ms     399.636µs     453.481µs      4  partials/sidebar-tree.html
+     1.447022ms     361.755µs      607.56µs      4  partials/taxonomy_terms_clouds.html
+     1.411777ms     470.592µs     957.296µs      3  partials/taxonomy_terms_article_wrapper.html
+      868.206µs     217.051µs     352.412µs      4  partials/page-meta-links.html
+      811.722µs     101.465µs     216.485µs      8  partials/taxonomy_terms_cloud.html
+      686.951µs     171.737µs      364.24µs      4  partials/breadcrumb.html
+      684.921µs      85.615µs     153.689µs      8  partials/search-input.html
+      576.244µs     288.122µs     476.722µs      2  partials/footer.html
+      488.183µs     122.045µs     250.314µs      4  partials/version-banner.html
+      451.765µs      75.294µs     218.172µs      6  partials/taxonomy_terms_article.html
+      377.941µs      47.242µs     134.725µs      8  partials/_funcs/get-page-images.html
+       353.89µs      353.89µs      353.89µs      1  _internal/_default/sitemap.xml
+      275.381µs      68.845µs     153.608µs      4  partials/outputformat.html
+      265.832µs     132.916µs     219.637µs      2  partials/footer/center.html
+      241.282µs       60.32µs      95.989µs      4  partials/hooks/head-end.html
+      221.997µs     110.998µs     113.292µs      2  partials/hooks/body-end.html
+      158.829µs     158.829µs     158.829µs      1  partials/feedback.html
+      124.994µs      31.248µs     117.947µs      4  partials/favicons.html
+      121.966µs     121.966µs     121.966µs      1  partials/page-meta-lastmod.html
+      117.662µs      58.831µs     102.577µs      2  partials/footer/copyright.html
+       84.804µs      42.402µs      78.758µs      2  partials/footer/left.html
+       79.703µs      39.851µs      74.616µs      2  partials/footer/right.html
+       13.925µs      13.925µs      13.925µs      1  /js/search.js
+        5.291µs       5.291µs       5.291µs      1  /js/plantuml.js
+        5.067µs       5.067µs       5.067µs      1  /js/markmap.js
+        4.993µs       4.993µs       4.993µs      1  /js/drawio.js
 
-INFO  build:  duration 1.909928256s
-
-                   | EN
--------------------+-----
-  Pages            |  8
-  Paginator pages  |  0
-  Non-page files   |  0
-  Static files     | 30
-  Processed images |  0
-  Aliases          |  0
-  Cleaned          |  2
-
-Total in 2073 ms
+INFO  build:  duration 1.897375069s
+Total in 2055 ms
+Error: error building site: render: failed to render pages: render of "taxonomy" failed: "/Users/carl/.local/share/hugo/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.9.2-0.20240315194958-1929a65ccffb/layouts/docs/list.html:12:5": execute of template failed: template: docs/list.html:12:5: executing "main" – File is nil; wrap it in if or with: {{ with partial "section-index.html" .>: error calling partial: "/Users/carl/.local/share/hugo/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.9.2-0.20240315194958-1929a65ccffb/layouts/partials/section-index.html:8:69": execute of template failed: template: partials/section-index.html:8:69: executing "partials/section-index.html" at <.File }}{{ .UniqueID }}{{ end }}

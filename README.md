@@ -54,3 +54,10 @@ This one fails on a more basic issue: `ERROR [en] REF_NOT_FOUND: Ref "/getting-s
 Also, `hugo server` tested to see the output. With the exception that the `readfile` shortcode isn't producing output (but if the path is changed, will produce an error!), the rest looks about right.
 
 ... sixth commit. Build successful
+
+1.  Edit `_index.md`, and put the `cascade` frontmatter back in
+2.  Run `hugo --cleanDestinationDir --gc --templateMetrics --logLevel debug` and store output into `/build.txt`
+
+The taxonomy error returns. Looks like the `cascade` frontmatter is the trigger condition here.
+
+... seventh commit. Build failed

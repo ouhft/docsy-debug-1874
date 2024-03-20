@@ -7,7 +7,8 @@ linkTitle: Welcome
 menu:
   main:
     weight: 10
-type: docs
+cascade:
+  - type: docs
 ---
 
 > Placeholder. Content mostly from <https://www.markdownguide.org/>
