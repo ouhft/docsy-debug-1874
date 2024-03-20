@@ -23,10 +23,20 @@ Test Site for diagnosing the issue in https://github.com/google/docsy/issues/187
 1.  Modify hugo.yaml to add module config
 2.  Run `hugo --cleanDestinationDir --gc --templateMetrics --logLevel debug` and store output into `/build.txt`
 
-... second commit. Build failed.
+... second commit. Build failed
 
 1.  Add `package.json` to `/docs`
 2.  Run `npm install`
 3.  Run `hugo --cleanDestinationDir --gc --templateMetrics --logLevel debug` and store output into `/build.txt`
 
 ... third commit. Build successful
+
+1.  Add `content/en/_index.md`
+2.  Run `hugo --cleanDestinationDir --gc --templateMetrics --logLevel debug` and store output into `/build.txt`
+
+Error has returned:
+```
+Error: error building site: render: failed to render pages: render of "taxonomy" failed: "/Users/carl/.local/share/hugo/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.9.2-0.20240315194958-1929a65ccffb/layouts/docs/list.html:12:5": execute of template failed: template: docs/list.html:12:5: executing "main" – File is nil; wrap it in if or with: {{ with partial "section-index.html" .>: error calling partial: "/Users/carl/.local/share/hugo/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.9.2-0.20240315194958-1929a65ccffb/layouts/partials/section-index.html:8:69": execute of template failed: template: partials/section-index.html:8:69: executing "partials/section-index.html" at <.File }}{{ .UniqueID }}{{ end }}
+```
+
+... fourth commit. Build failed
