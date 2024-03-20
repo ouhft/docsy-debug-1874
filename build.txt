@@ -3,53 +3,58 @@ Start building sites …
 hugo v0.124.1-db083b05f16c945fec04f745f0ca8640560cf1ec+extended darwin/amd64 BuildDate=2024-03-20T11:40:10Z VendorInfo=brew
 
 INFO  static: removing all files from destination that don't exist in static dirs
-INFO  static: syncing static files to / duration 38.957931ms
-INFO  build:  step process substep collect files 0 files_total 0 duration 199.449µs
-INFO  build:  step process duration 251.523µs
-INFO  build:  step assemble duration 309.687µs
+INFO  static: syncing static files to / duration 32.363693ms
+INFO  build:  step process substep collect files 0 files_total 0 duration 148.536µs
+INFO  build:  step process duration 188.339µs
+INFO  build:  step assemble duration 277.286µs
 INFO  postcss: use config file "/Users/carl/.local/share/hugo/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.9.2-0.20240315194958-1929a65ccffb/postcss.config.js"
-INFO  postcss: npm ERR!
-INFO  postcss: could not determine executable to run
-INFO  postcss:
-INFO  postcss: npm ERR!
-INFO  postcss: A complete log of this run can be found in: /Users/carl/.npm/_logs/2024-03-20T22_44_40_591Z-debug-0.log
-INFO  build:  step render substep pages site en outputFormat html duration 1.710364349s
+INFO  build:  step render substep pages site en outputFormat html duration 2.502518031s
 INFO  deprecated: .Site.Author was deprecated in Hugo v0.124.0 and will be removed in a future release. Use taxonomies instead.
-INFO  build:  step render substep pages site en outputFormat rss duration 1.174908ms
-INFO  build:  step render pages 8 content 1 duration 1.713217722s
-INFO  build:  step postProcess duration 8.774µs
+INFO  build:  step render substep pages site en outputFormat rss duration 1.301825ms
+INFO  build:  step render pages 8 content 1 duration 2.50514784s
+INFO  build:  step postProcess duration 8.665µs
 
 Template Metrics:
 
      cumulative       average       maximum
        duration      duration      duration  count  template
      ----------      --------      --------  -----  --------
-   6.748508551s  1.687127137s  1.689921809s      4  partials/head.html
-   6.745108901s  1.686277225s  1.688080787s      4  partials/head-css.html
-   3.408089365s  1.704044682s  1.704632947s      2  _default/terms.html
-   1.707487033s  1.707487033s  1.707487033s      1  home.html
-   1.702134455s  1.702134455s  1.702134455s      1  404.html
-    56.835427ms   14.208856ms   14.373234ms      4  partials/scripts.html
-      8.48514ms    2.121285ms    2.151593ms      4  partials/navbar.html
-     2.039875ms     509.968µs     654.819µs      4  partials/footer.html
-      965.484µs     241.371µs     309.253µs      4  partials/footer/center.html
-      965.345µs     321.781µs     363.031µs      3  _default/list.rss.xml
-      601.277µs     300.638µs     304.878µs      2  partials/taxonomy_terms_cloud.html
-      576.201µs      72.025µs     331.675µs      8  partials/_funcs/get-page-images.html
-      570.436µs     142.609µs     165.632µs      4  partials/search-input.html
-      469.567µs     117.391µs     186.393µs      4  partials/footer/copyright.html
-      358.875µs      89.718µs     101.229µs      4  partials/hooks/head-end.html
-       279.91µs      69.977µs     167.658µs      4  partials/outputformat.html
-      272.812µs      68.203µs     184.076µs      4  partials/footer/left.html
-      243.549µs     243.549µs     243.549µs      1  _internal/_default/sitemap.xml
-      113.212µs      28.303µs     106.908µs      4  partials/favicons.html
-       87.975µs      87.975µs      87.975µs      1  partials/hooks/body-end.html
-       71.589µs      17.897µs      55.926µs      4  partials/footer/right.html
-        8.218µs       8.218µs       8.218µs      1  /js/search.js
-        5.541µs       5.541µs       5.541µs      1  /js/drawio.js
-        4.851µs       4.851µs       4.851µs      1  /js/plantuml.js
-        4.106µs       4.106µs       4.106µs      1  /js/markmap.js
+   9.931723782s  2.482930945s  2.485477292s      4  partials/head.html
+   9.929014393s  2.482253598s  2.484260615s      4  partials/head-css.html
+   4.991622565s  2.495811282s  2.497938358s      2  _default/terms.html
+   2.499632558s  2.499632558s  2.499632558s      1  home.html
+   2.496421973s  2.496421973s  2.496421973s      1  404.html
+    45.353943ms   11.338485ms   11.469679ms      4  partials/scripts.html
+     6.971296ms    1.742824ms    1.766489ms      4  partials/navbar.html
+     1.714274ms     428.568µs     519.482µs      4  partials/footer.html
+      1.14927ms      383.09µs     419.252µs      3  _default/list.rss.xml
+      743.263µs     185.815µs     325.011µs      4  partials/footer/center.html
+      652.593µs     326.296µs     331.734µs      2  partials/taxonomy_terms_cloud.html
+      599.186µs     149.796µs     154.054µs      4  partials/search-input.html
+      384.175µs      48.021µs     132.123µs      8  partials/_funcs/get-page-images.html
+      284.381µs      71.095µs     165.378µs      4  partials/outputformat.html
+      253.826µs      63.456µs     180.263µs      4  partials/footer/left.html
+      251.014µs      62.753µs      86.778µs      4  partials/hooks/head-end.html
+      235.534µs     235.534µs     235.534µs      1  _internal/_default/sitemap.xml
+       231.53µs      57.882µs     169.163µs      4  partials/footer/right.html
+       113.02µs      28.255µs     106.644µs      4  partials/favicons.html
+      105.567µs      26.391µs      66.507µs      4  partials/footer/copyright.html
+       85.502µs      85.502µs      85.502µs      1  partials/hooks/body-end.html
+        8.068µs       8.068µs       8.068µs      1  /js/search.js
+        4.917µs       4.917µs       4.917µs      1  /js/plantuml.js
+        4.743µs       4.743µs       4.743µs      1  /js/drawio.js
+        4.698µs       4.698µs       4.698µs      1  /js/markmap.js
 
-INFO  build:  duration 1.714386646s
-Total in 1895 ms
-Error: error building site: POSTCSS: failed to transform "/scss/main.css" (text/css). Check your PostCSS installation; install with "npm install postcss-cli". See https://gohugo.io/hugo-pipes/postcss/: binary with name "npx" not found
+INFO  build:  duration 2.506209325s
+
+                   | EN
+-------------------+-----
+  Pages            |  8
+  Paginator pages  |  0
+  Non-page files   |  0
+  Static files     | 30
+  Processed images |  0
+  Aliases          |  0
+  Cleaned          |  0
+
+Total in 2667 ms

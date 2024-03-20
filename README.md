@@ -18,4 +18,15 @@ Test Site for diagnosing the issue in https://github.com/google/docsy/issues/187
 8.  Rename `hugo.toml` to `hugo.yaml`, then edit content to what is shown in current commit
 9.  Run `hugo --cleanDestinationDir --gc --templateMetrics --logLevel debug` and store output into `/build.txt`
 
-... initial commit time.
+... initial commit time. Build successful
+
+1.  Modify hugo.yaml to add module config
+2.  Run `hugo --cleanDestinationDir --gc --templateMetrics --logLevel debug` and store output into `/build.txt`
+
+... second commit. Build failed.
+
+1.  Add `package.json` to `/docs`
+2.  Run `npm install`
+3.  Run `hugo --cleanDestinationDir --gc --templateMetrics --logLevel debug` and store output into `/build.txt`
+
+... third commit. Build successful
