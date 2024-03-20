@@ -1,0 +1,38 @@
+hugo --cleanDestinationDir --gc --templateMetrics --logLevel debug
+Start building sites …
+hugo v0.124.1-db083b05f16c945fec04f745f0ca8640560cf1ec+extended darwin/amd64 BuildDate=2024-03-20T11:40:10Z VendorInfo=brew
+
+INFO  static: removing all files from destination that don't exist in static dirs
+INFO  static: syncing static files to / duration 684.72µs
+INFO  build:  step process substep collect files 0 files_total 0 duration 183.747µs
+INFO  build:  step process duration 227.807µs
+INFO  build:  step assemble duration 279.462µs
+WARN  found no layout file for "html" for kind "home": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+INFO  build:  step render substep pages site en outputFormat html duration 932.437µs
+INFO  deprecated: .Site.Author was deprecated in Hugo v0.124.0 and will be removed in a future release. Use taxonomies instead.
+INFO  build:  step render substep pages site en outputFormat rss duration 1.582208ms
+INFO  build:  step render pages 4 content 0 duration 2.592032ms
+INFO  build:  step postProcess duration 7.295µs
+
+Template Metrics:
+
+     cumulative       average       maximum
+       duration      duration      duration  count  template
+     ----------      --------      --------  -----  --------
+     1.436348ms     478.782µs     506.008µs      3  _internal/_default/rss.xml
+      334.526µs     334.526µs     334.526µs      1  _internal/_default/sitemap.xml
+
+INFO  build:  duration 3.614805ms
+
+                   | EN
+-------------------+-----
+  Pages            |  4
+  Paginator pages  |  0
+  Non-page files   |  0
+  Static files     |  0
+  Processed images |  0
+  Aliases          |  0
+  Cleaned          |  0
+
+Total in 14 ms

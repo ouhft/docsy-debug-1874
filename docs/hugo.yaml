@@ -1,0 +1,4 @@
+# hugo.yaml -- Base config
+baseURL: https://github.io/ouhft/docsy-debug-1874
+contentDir: content/en
+publishDir: ../public

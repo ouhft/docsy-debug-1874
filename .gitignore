@@ -1,0 +1,9 @@
+.DS_Store
+thumbs.db
+
+### Hugo related
+public/
+resources/
+node_modules/
+package-lock.json
+.hugo_build.lock
